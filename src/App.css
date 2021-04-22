@@ -20,15 +20,12 @@ nav ul li {
 .navBack {
   background-color: #5cb892;
 }
-
-
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: #05386b !important;
   border-top: 0.1875rem solid rgba(255, 255, 255, 0);
 }
-
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
