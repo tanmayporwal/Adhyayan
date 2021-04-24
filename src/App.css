@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 body {
   font-family: 'Roboto Condensed', sans-serif !important;
-}
+} */
 /***************Navbar********************/
 
 /* Menu Links */
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 nav a.nav-link {
-  /* font-weight: 500; */
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -18,30 +21,141 @@ nav ul li {
 }
 
 .navBack {
-  background-color: #5cb892;
+  background-color: #5cb892 !important;
 }
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: #05386b !important;
-  border-top: 0.1875rem solid rgba(255, 255, 255, 0);
+  border-top: 0.1875rem solid #5cb892 !important;
+
+  
 }
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  /* height: 6rem !important; */
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid #6FB3B8 !important;
+  border-top: 0.1875rem solid #05386b !important;
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid #6FB3B8 !important;
+  border-top: 0.1875rem solid #05386b !important;
 
 }
 
-.signInBtn {
-  color: #fff !important;
+.signButton > li > a:hover{
+  display: flex !important;
+  margin-bottom: 0 !important;
+  list-style: none !important;
+  border-top: 0.1875rem solid #5cb892 !important;
+}
+
+.signInBtn, .signUpBtn, .submitBtn, .signupSubmitBtn {
+  color: #5cb892 !important;
   background-color: #05386b !important;
+}
+
+.signInBtn, .signUpBtn {
+  text-align: center;
+}
+
+.signInBtn:hover, .signUpBtn:hover, .submitBtn:hover, .signupSubmitBtn:hover {
+  background-color: #053e77 !important;
+  color:#5cb892 !important;
+}
+
+.modal-header {
+  display: inline-block;
+}
+
+.modal-header .close {
+  margin-top: -10px !important;
+}
+
+.modal-content {
+  width: 85% !important;
+}
+
+/* --------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    margin-bottom: 317px;
+  }
 }
