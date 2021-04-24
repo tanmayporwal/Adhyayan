@@ -1,8 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
 
 body {
   font-family: 'Roboto Condensed', sans-serif !important;
-} */
+}
 /***************Navbar********************/
 
 /* Menu Links */
@@ -12,28 +12,29 @@ html, body {
 }
 
 nav a.nav-link {
-  letter-spacing: 0.0375rem;
+  letter-spacing: 0.0350rem;
   cursor: pointer;
 }
 
 nav ul li {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .navBack {
   background-color: #5cb892 !important;
 }
+
+@media (min-width: 415px) and (max-width: 768px){
+  .signLink {
+    margin-top: -7px !important;
+  }
+}
 .navbar-nav > li > a {
   margin-right: 0.75rem;
-  margin-left: 0.75rem;
+  /* margin-left: 0.75rem; */
   color: #05386b !important;
   border-top: 0.1875rem solid #5cb892 !important;
-
-  
-}
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
@@ -45,25 +46,23 @@ nav ul li {
 
 }
 
-.signButton > li > a:hover{
-  display: flex !important;
-  margin-bottom: 0 !important;
-  list-style: none !important;
-  border-top: 0.1875rem solid #5cb892 !important;
-}
 
 .signInBtn, .signUpBtn, .submitBtn, .signupSubmitBtn {
   color: #5cb892 !important;
   background-color: #05386b !important;
 }
 
-.signInBtn, .signUpBtn {
+/* .signInBtn, .signUpBtn {
   text-align: center;
-}
+} */
 
-.signInBtn:hover, .signUpBtn:hover, .submitBtn:hover, .signupSubmitBtn:hover {
+.signInBtn:hover, .signUpBtn:hover, .signinSubmitBtn:hover, .signupSubmitBtn:hover {
   background-color: #053e77 !important;
   color:#5cb892 !important;
+}
+
+.glyphicon-log-in, .glyphicon-user {
+  margin-right: 3px;
 }
 
 .modal-header {
@@ -154,8 +153,4 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
-@media (max-width: 768px) {
-  .toggle-btn {
-    margin-bottom: 317px;
-  }
-}
+
