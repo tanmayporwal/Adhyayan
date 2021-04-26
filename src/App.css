@@ -156,6 +156,7 @@ body, html, .App, #root, .auth-wrapper {
 
 @media (max-width: 768px) {
   .toggle-btn {
-    margin-bottom: 317px;
+    margin-bottom: 1rem;
+    margin-left: auto;
   }
 }
