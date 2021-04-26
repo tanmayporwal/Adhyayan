@@ -32,7 +32,6 @@ export default class SignUp extends Component {
         .catch(err => {
             console.error(err);
         });
-
         alert("hello")
     }
 
